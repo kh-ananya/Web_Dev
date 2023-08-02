@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container
+        {  
+            color: white;
+            font-size: 25px;
+            text-align: center;
+            height: 250vh;
+            width: 100vw;
+            background-color: black;
+            /* display: flex; */
+        }
+        .header
+        {
+            height: 10%;
+            width: 98%;
+            margin: 10px;
+            display: flex;
+            /* border: 2px solid yellow; */
+            align-items: center;
+            justify-content: space-between;
+        }
+        .box
+        {
+            height: 40%;
+            width: 98%;
+            /* border: 2px solid yellowgreen; */
+            display: flex;
+            margin: 10px;
+        }
+       
+        .inner-box-1
+        {  
+            font-size: 20px;
+            width: 33%;
+            height: 100%; 
+            text-align: center;
+            /* padding: 50px; */
+            /* border-right: 2px  solid orange ; */
+            font-size: 23px;
+        }
+        .inner-box-2
+        {   
+            /* text-align: center; */
+            display: flex;
+            flex-wrap: wrap;
+            width: 67%;
+            height: 100%;
+            margin-left: 2px;
+            /* border: 2px solid yellow; */
+        }
+        .Logo
+        {
+            height: 90%;
+            width: 15%;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+        }
+        .Logo img{
+            width: 1000%;
+            height: 100%;
+            /* border-radius: 50%; */
+        } 
+        .Menu
+        {
+            height: 50%;
+            width: 50%;
+            border: 2px solid black;   
+            margin: 5px;
+            list-style: none;
+            display: flex;
+            font-size: 40px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .Buttons
+        {
+            height: 50%;
+            width: 25%;
+            border: 2px solid black;
+            margin: 5px;
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .footer
+        {   
+            display: flex;
+            margin: 10px;
+            height: 40%;
+            width: 98%;
+            /* border: 2px solid red; */
+        
+        } 
+        button{
+            width: 30%;
+            padding: 10px;
+            border: none;
+            margin-left: 70px;
+        } 
+        .img
+        {    
+            /* border: 2px solid  red; */
+            font-size: 15px;
+            height: 50%;
+            width: 33%;
+            border: 2px solid gray;
+        } 
+        img
+        {
+            width: 100%;
+            height: 60%;
+        } 
+        .form
+        {   
+            height: 90%; 
+            width: 60%;
+            border: 2px solid white;
+            /* padding: 10px;  */
+            margin-left: 300px;
+            margin-right: 150px; 
+            margin-top: 100px;
+            margin-bottom: 50px;
+            text-align: center;
+        } 
+        #b
+        {
+            margin-bottom: 50px;
+        } 
+        form input
+        {
+            padding: 5px;
+            margin: 5px;
+        }
+        form h1{   
+            margin-top: 30px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+    <div class="header">
+        <div class="Logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47gphLeePRhlpkYhqqgiM42ZdCJ1alnTG1w&usqp=CAU" alt="">
+        </div>
+        <div class="Menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Ratings</li>
+        </div>
+        <div class="Buttons">
+            <h2>Login</h2>
+            <h2>SignUp</h2>
+        </div>
+    </div>
+    <div class="box"> 
+        <div class="inner-box-1">
+            <h1>Category</h1>
+            <label for="">Sports</label> : <input type="radio" name="Sports">Indoor
+                                           <input type="radio" name="Sports">Outdoor  <br> <br> 
+             <label for="">Indoor</label> : <input type="radio" name="Indoor">Chess
+                                            <input type="radio" name="Indoor">Ludo
+                                            <input type="radio" name="Indoor">Table-Tennis <br> <br>
+             <label for="">Outdoor</label> : <input type="radio" name="Outdoor">Cricket
+                                             <input type="radio" name="Outdoor">Football
+                                             <input type="radio" name="Outdoor">BasketBall
+                                             <input type="radio" name="Outdoor">Badmintion <br> <br>
+                                             <!-- <input type="radio" name="Outdoor">Cycling <br> <br> -->
+
+            <label for="">Brands</label> :  <input type="checkbox">MRF
+                                            <input type="checkbox">Yonex
+                                            <input type="checkbox">SG <br> <br>
+              
+            <label for="">City</label> :
+            <select name="" id="">
+                <option value="">None</option>
+                <option value="">Noida</option>
+                <option value="">Jaipur</option>
+                <option value="">Jodhpur</option>
+                <option value="">Ajmer</option>
+            </select> <br><br>
+            <label for="">Queries</label> :
+            <textarea name="" id="" cols="30" rows="10"></textarea> <br> <br>
+            <button>Submit</button>
+        </div>
+        <div class="inner-box-2">
+            <!-- <center><h1>Premium Offers</h1></center> -->
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlKGQUXBxB4fSd5jUqlvTgMjnvY33n4An5Bg&usqp=CAU" alt="">
+                <h2>S G Cricket Kit</h2>
+                <h3>Offer Price : Rs2000 <sub><del>Rs4000</del></sub></h3>
+                <h4>Offers Ends in : 00:14:04 </h4>
+            </div>
+            <div class="img"><img src="data:image/jpeg;base64,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" alt="">
+                  <h2>Yonex Badmintion Kit</h2>
+                  <h3>Offer Price : Rs1200 <sub><del>Rs1800</del></sub></h3>  
+                  <h4>Offers Ends in : 00:14:04 </h4>
+            </div>
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhp_6RylMMkzAIbtUJWsaaarg5n8__hBgSHg&usqp=CAU" alt="">
+                 <h2>Table-Tennis Kit</h2>
+                 <h3>Offer Price : Rs1000 <sub><del>Rs1800</del></sub></h3>
+                 <h4>Offers Ends in : 00:14:04 </h4>
+            </div>
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3f0qHgqMbmAO1c7KZPkXn40lb4NE9cvwXIw&usqp=CAU" alt="">
+                 <h2>Get 2 For Rs 500</h2>
+                 <h3><del>Rs1400</del></h3>
+                 <h4>Offers Ends in : 00:14:04 </h4>
+            </div>
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ1-WioQmAIUTMWFT1m_pmROJ584539OTAeg&usqp=CAU" alt="">
+                <h2>Foldable-Chessboard</h2>
+                <h3>Rs300 <sub><del>Rs500</del></sub></h3>
+                <h4>Offer Ends in : 00:14:04</h4>
+            </div>
+            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqONrGEkCuTGc0kkRgrw0cvOthqWN3CWssQw&usqp=CAU" alt="">
+                <h2>Get 2 for Rs 50</h2>
+                <h3><del>Rs150</del></h3>
+                <h4>Offer Ends in : 00:14:04</h4>
+            </div>
+        </div>
+    </div>
+    <div class="footer"> 
+        <form class="form" action="">
+            <h1>Contact-Form</h1>
+            <label for="">Enter Name</label> : <input type="text" placeholder="Enter Name"> <br> <br>
+            <label for="">Mobile-No.</label> : <input type="number" placeholder="Enter Number"> <br> <br> 
+            <label for="">Email</label> : <input type="email" placeholder="Enter Email"> <br> <br>
+            <label for="">Payment Mode</label> : <input type="radio" name="Payment Mode">UPI 
+                                                 <input type="radio" name="Payent Mode">Cash on delivery
+                                                 <input type="radio" name="Payment-Mode">Net-Banking <br> <br>
+            Suggestions : 
+            <textarea name="" id="" cols="30" rows="10"></textarea> <br> <br>
+            <button id="b">Submit</button>
+        </form>
+        
+    </div>
+</div>
+</body>
+</html>
