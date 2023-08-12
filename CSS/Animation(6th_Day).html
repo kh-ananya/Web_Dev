@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        .box
+        {
+            height: 300px;
+            width: 200px;
+            background-color: yellowgreen;
+            position: relative;
+            animation-name: ananya;
+            animation-duration: 10s;
+            animation-iteration-count: 5;
+            animation-timing-function: ease-in;
+        }
+        @keyframes ananya
+        { 
+            0%
+            {   
+                text-align: center;
+                left: 0px;
+                top: 0px;
+                background-color: aqua;
+                border-radius: 2px;
+            }
+            25%
+            {   text-align: center;
+               border-radius: 20px;
+               left: 300px;
+               top: 0;
+               background-color: yellowgreen;
+            }
+            50%
+            {    text-align: center;
+                border-radius: 40px;
+                left: 300px;
+                top: 300px;
+                background-color: red;
+                border: 2px solid yellow;
+            }
+            75%
+            {    text-align: center;
+                border:  50px double blue;
+                border-radius: 60px;
+                  left: 0;
+                  top: 300px;
+                  background-color: pink;
+            }
+            100%
+            {    text-align: center;
+                border-radius: 100px;
+                left: 0;
+                top: 0;
+                background-color: gainsboro;
+            }
+
+            /* from 
+            {
+                width: 200px;
+                height: 200px;
+                border-radius: 5px;
+                background-color: gold;
+                border: 2px solid blue;
+                font-size: 2px;
+                text-align: end;
+                
+            }
+            to  
+            {   
+                text-align: center;
+                font-size: 20px;
+                width: 1500px;
+                height: 700px;
+                border-radius: 80px;
+                background-color: red;
+                border : 2px double black;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Heyy
+    </div>
+</body>
+</html>
