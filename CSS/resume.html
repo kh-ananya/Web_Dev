@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+      
+      .container
+      {
+        height: 200vh;
+        width: 98vw;
+        margin: auto;
+        /* border: 2px solid black; */
+        display: flex;
+        /* flex-wrap: wrap; */
+      }
+      .left
+      {
+        height: 88%;
+        width: 35%;
+        /* margin-left: 5%; */
+        box-shadow: 0px 0px 6px black;
+        background-color: ghostwhite;
+        /* border: 2px solid red; */
+      }
+      .right
+      {
+        height: 90%;
+        width: 64%;
+        margin-top: 0.1%;
+        margin-left: 0.5%;
+        /* margin: auto; */
+        /* box-shadow: 0px 0px 6px black; */
+        /* border: 2px solid blue; */
+      }
+      .person
+      {
+        height: 40%;
+        width: 100%;
+        border-bottom: 0.5px solid gainsboro ;
+        margin: auto;
+      }
+      .img
+      {
+        width: 87%;
+        height: 60%;
+        background: url(https://www.w3schools.com/w3images/avatar_hat.jpg);
+        background-size: cover;
+        margin-left: 13%;
+        display: flex;
+        align-items: end;
+        font-size: 30px;
+        letter-spacing: 2px;
+        /* text-align:; */
+        /* border: 2px solid yellow; */
+      }
+      .desc
+      {
+        width: 87%;
+        height: 38%;
+        margin-left: 13%;
+        margin-top: 2%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        /* font-size: 15px;
+        color: black;
+        opacity: 0.5;
+        letter-spacing: 2px; */
+      }
+      .img1
+      {
+        height: 100%;
+        width: 10%;
+        /* border: 2px solid yellowgreen; */
+      }
+      img
+      { 
+        /* background-color: cyan;
+        color: aqua; */
+        margin-left: 10%;
+      }
+      .write
+      {
+        height: 100%;
+        width: 80%;
+        /* border: 2px solid blue; */
+        /* margin-top: -1%; */
+        font-size: 20px;
+        opacity: 0.5;
+      }
+      #par
+      {
+        margin-top: 1%;
+      }
+      #para
+      {
+        margin-top: 7%;
+      }
+      .image 
+      {
+        height: 100%;
+        width: 8%;
+        /* border: 2px solid black; */
+        margin-left: 13%;
+      }
+      /* p
+      {
+        font-size: 100%;
+      } */
+      .head
+      {
+        height: 4vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        /* border-bottom: 2px solid black; */
+      }
+      #p
+      { 
+        margin-top: 0%;
+        opacity: 0.5;
+        font-size: 20px;
+      }
+      /* .progress
+      {
+        height: 85%;
+        width: 87%;
+        margin-left: 13%;
+        border: 2px solid rebeccapurple; 
+       }*/
+      .skill
+      {
+        height: 60%;
+        width: 100%;
+        /* border: 2px solid yellow; */
+      }
+      progress
+        {
+            height: 3vh;
+            width: 85%;
+            border: 2px solid lightgray;
+            background-color: lightgray;
+            border-radius: 25px;
+            margin-top: 1%;
+             
+        }
+        progress::-webkit-progress-bar
+        {
+          border-radius: 25px;
+          background-color: white;
+        }
+        progress::-webkit-progress-value
+        {
+          border-radius: 25px;
+          background-color: #009688;
+        }
+
+        p
+        {  
+            margin-top: -0.75%;
+            opacity: 1;
+        }
+        .box
+        {
+          height: 35%;
+          width: 99%;
+          /* border: 2px solid aqua; */
+          margin-left: 13%;
+          /* margin-top:; */
+        }
+        .box1
+        {
+          height: 18%;
+        }
+        /* i
+        {  
+           height: 100%;
+           width: 10%;
+          font-size: 50px;
+          border: 2px solid red;
+          color: #009688;
+        } */
+        .upper
+        {
+          height: 49%;
+          margin-top: 1%;
+          width: 99%;
+          margin-left: 1%;
+          box-shadow: 0px 0px 6px black;
+          /* border: 2px solid blue; */
+        }
+        .lower
+        {
+          height: 49%;
+          margin-top: 2%;
+          width: 99%;
+          margin-left: 1%;
+          box-shadow: 0px 0px 6px black;
+          /* border: 2px solid blue; */
+        }
+        .head
+        {
+           height: 10%;
+           width: 100%;
+           margin-left: 1%;
+        }
+        .cont
+        {
+          height: 100%;
+            width: 85%;
+            margin-left: 1%;
+            font-size: 35px;
+            opacity: 0.5;
+            display: flex;
+            align-items: center;
+            /* border: 2px solid yellow;   */
+        }
+        .con1
+        {
+          height: 25%;
+          width: 98%;
+          /* margin: auto; */
+          border-bottom: 1px solid gainsboro;
+        }
+        .con2
+        {
+          height: 26%;
+          width: 98%;
+          margin: auto;
+          border-bottom: 1px solid gainsboro;
+        }
+        .con3
+        {
+          height: 26%;
+          width: 98%;
+          margin: auto;
+          /* border: 1px solid gainsboro; */
+        }
+        .up
+        {
+          margin-top: 40px;
+          height: 23%;
+          width: 97%;
+          margin-left: 2%;
+          font-size: 20px;
+          /* margin-bottom: -1%; */
+          opacity: 0.5;
+          /* text-shadow: 3px; */
+          /* border: 1px solid brown; */
+        }
+        .mid
+        { 
+          margin-left: 2%;
+          height: 25%;
+          width: 97%;
+          font-size: 20px;
+          color: #009688;
+          /* border: 2px solid aqua; */
+        }
+        #suit
+        {
+          height: 100%;
+           width: 10%;
+          font-size: 50px;
+          /* border: 2px solid red; */
+          color: #009688;
+        }
+        #cal
+        {
+           height: 100%;
+           width: 100%;
+           margin-right: 2%;
+        }
+        .low
+        {  
+          margin-left: 2%;
+          height: 23%;
+          width: 97%;
+          color: black;
+          /* margin-bottom: 1%; */
+          font-size: 17px;
+        }
+        #edu
+        {
+          height: 100%;
+           width: 10%;
+          font-size: 50px;
+          /* border: 2px solid red; */
+          color: #009688;
+        }
+        .foot
+        {   
+          color: white;
+          font-size: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 150px;
+          width: 100%;
+          background-color: #009688;
+        }
+
+        /* progress::-webkit-progress-bar
+        {
+          background-color: white;
+          border-radius: 25px;
+        }
+        progress::-webkit-progress-value
+        {  
+          border-radius: 25px;
+          background-color: #009688;
+        } */
+    </style>
+</head>
+<body> 
+    <div class="container">
+    <div class="left">
+        <div class="person">
+             <div class="img"> 
+              Jane Doe <br>
+             </div>
+             <div class="desc">
+              <div class="img1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9S2QpAmo7zIbdUqKSlGurdqLx8FB-MZ2_XQ&usqp=CAU" height="12%" width="50%"> <br> <br>
+                <img src="data:image/png;base64,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" height="12%" width="40%"> <br> <br>
+                <img src="data:image/png;base64,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" height="12%" width="50%"> <br> <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtCG-pIiyMKGAtUZB_m4fnBptoGDoFa-v1A&usqp=CAU" height="12%" width="40%">               
+              </div>
+              <div class="write">
+                <p id="par">Designer</p> 
+                <p id="par">London,UK</p> 
+                <p id="par">ex@email.com</p> 
+                <p id="para">11237645</p>
+              </div>
+             </div>
+        </div>
+        <div class="skill">
+            <div class="head">
+              <div class="image">
+                <img src="data:image/png;base64,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" height="30%" width="40%">
+              </div>
+              <div class="con">
+                <p id="p"><b>Skills</b></p>
+              </div>
+            </div>
+             <div class="box"> 
+        <p>Adobe PhotoShop</p> 
+        <progress max="100" value="90"></progress>
+        <p>PhotoGraphy</p>  
+        <progress max="100" value="80" ></progress>  
+        <p>Media</p>  
+        <progress max="100" value="75"></progress>
+        <p>Networking</p> 
+        <progress max="100" value="50"></progress>
+    </div>
+           <div class="head">
+            <div class="image">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbo8aJtzGWogCteeMp8zF_FF4nMBlDxuMySw&usqp=CAU" height="30%" width="40%" alt=""> <br> <br>
+            </div>
+            <div class="con">
+              <p id="p"><b>Languages</b></p>
+            </div>
+           </div>
+           <div class="box">
+            <p>English</p>
+            <progress  max="100" value="100"></progress>
+            <p>Spanish</p>
+            <progress  max="100" value="50"></progress>
+            <p>French</p>
+            <progress  max="100" value="25"></progress>
+           </div>
+        </div>
+    </div>
+    <div class="right">
+      <div class="upper">
+        <div class="head">
+          <div class="kit">
+            <i class="ri-suitcase-line" id="suit"></i>
+          </div>
+          <div class="cont">
+          Work Experience
+        </div>
+        </div>  
+        <div class="con1">
+          <div class="up">
+            <b>Front End Developer / w3schools.com</b>
+          </div>
+          <div class="mid">
+            <i class="ri-calendar-2-fill" id="cal"></i> Jan 2015 - Current
+          </div>
+          <div class="low">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ullam aspernatur beatae explicabo dolorum, aut pariatur earum, totam repellendus natus, quisquam ab? Blanditiis ad ducimus molestiae vitae?
+          </div>
+        </div>
+        <div class="con2">
+          <div class="up">
+            <b>Web Developer / something.com</b>
+          </div>
+          <div class="mid">
+            <i class="ri-calendar-2-fill" id="cal"></i> Mar 2012 - Dec 2014
+          </div>
+          <div class="low">
+            Consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique, iusto dolorum pariatur debitis ad maxime sequi maiores sit molestiae perspiciatis ratione fugiat explicabo nam.
+          </div>
+        </div>
+        <div class="con3">
+          <div class="up">
+            <b>Graphic Designer / designsomething.com</b>
+          </div>
+          <div class="mid">
+            <i class="ri-calendar-2-fill" id="cal"></i> Jun 2010 - Mar 2012
+          </div>
+          <div class="low">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+      <div class="lower">
+        <div class="head">
+          <div class="kit">
+            <i class="ri-settings-5-fill" id="edu"></i>
+          </div>
+          <div class="cont">
+            Education
+          </div>
+        </div>
+        <div class="con1">
+          <div class="up">
+            <b>W3Schools</b>
+          </div>
+          <div class="mid">
+            <i class="ri-calendar-2-fill" id="cal"></i> Forever
+          </div>
+          <div class="low">
+            Web Development! All I need to know in one place
+          </div>
+        </div>
+        <div class="con2">
+          <div class="up">
+            <b>London Buisness School</b>
+          </div>
+          <div class="mid">
+            <i class="ri-calendar-2-fill" id="cal"></i> 2012 - 2015
+          </div>
+          <div class="low">
+            Master Degree
+          </div>
+        </div>
+        <div class="con3">
+          <div class="up">
+            <b>School of Coding</b>
+          </div>
+          <div class="mid">
+            <i class="ri-calendar-2-fill" id="cal"></i> 2010 - 2012
+          </div>
+          <div class="low">
+            Bachelor Degree
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="foot">
+         W3Schools.in
+    </div>
+</div>
+
+</body>
+</html>
