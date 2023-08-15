@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+              <input type="text" id="inp">
+              <!-- <input type="text" id="inp2"> -->
+              <button id="button">Submit</button>  
+
+          <script>
+            document.getElementById("button").onclick = function()
+            {
+             let a= Number(document.getElementById("inp").value);
+             let count = 0;
+             let rem ;
+             while(a>0)
+             {
+               rem= a%10;
+              //  count = count+rem;
+              count = count+1;
+               a = parseInt(a/10);
+             }
+             console.log(count)
+            //  let b= Number(document.getElementById("inp2").value);
+            //  console.log(a+b)
+            //  console.log(a)
+            }
+            // var i = 0
+            // while(i<100)
+            // {
+            //     console.log(i)
+            //     i=i+1;
+              
+            // }
+
+            // var i = prompt("Enter")
+            //  a=1
+            //  while(a<i)
+            //  {
+              
+            //   if(a<=i/2)
+            //   {
+            //     console.log(a)
+            //     // break;
+            //   }
+            //   else {
+            //     break;
+            //   }
+            //      a++
+            //  }
+            // a=0
+            // while(a<=i)
+            // {
+            //   if(a==i/2)
+            //   {
+            //   }
+            //   else
+            //   {
+            //     console.log(a)
+            //   }
+            //   a++;
+            // }
+            // var i = prompt("Enter")
+            // a = 0;
+            // while(a<=i)
+            // { 
+            //   if(a%2==0)
+            //   {
+            //   console.log(a,"Even")
+            //   }
+            //   else
+            //   {
+            //     console.log(a,"Odd")
+
+            //   }
+            //   a++;
+            // }
+
+
+          </script>
+</body>
+</html> 
