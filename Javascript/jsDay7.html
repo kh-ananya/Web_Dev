@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <script>
+        // let a = [10,20,30,40,50,80,56,65]
+        // let b = a.filter (function(item)
+        // {
+        //        return item>50
+        // })
+        // console.log(b)
+        // let b = a.reduce (function(a,b)
+        // {
+        //        console.log(a,b)
+        //        return a+b
+        // })
+        // console.log(b)
+
+        // let a = [[10,20],[30,40,[80,70,[5,6,[7,6,5,[0,"mohit"],8,5],5,6],6,4],6,'a'],[50,80],[56,65]]
+        // // console.log(a.flat())
+
+        // let a = "mohit,rohit,ankit,aman,anu,akshat"
+        // console.log(a.split(" ,"))
+
+        // let b = ['mohit,rohit,ankit,aman,anu,akshat']
+        // console.log(b.join(","))
+
+
+        ////          OBJECTS
+        // let obj =  {
+        //     name : "Ananya",
+        //     age : 19,
+        //     address : 'Jaipur'
+        // }
+        // console.log(obj.name)
+        // console.log(obj.age)
+        // console.log(obj.address)
+        // let obj = [
+        // {
+        //     name : "Ananya",
+        //     age : 19,
+        //     address : 'Jaipur'
+        // },
+        // {
+        //     name : "Ajay",
+        //     age : 18,
+        //     address : 'Alwar'
+        // },
+        // {
+        //     name : "Adi",
+        //     age : 18,
+        //     address : 'Jaipur'
+        // }]
+        // // console.log(obj[1].name)
+        // for(let i of obj)
+        // {
+        //     console.log(i.name,i.age,i.address)
+        // }
+
+        // let a = [
+        //     {
+        //         name : "ananya",
+        //          age : 18
+        //     },
+        //     {
+        //         name : "ajay",
+        //          age : 19
+        //     },
+        //     {
+        //         name : "pranshul",
+        //          age : 15
+        //     },
+        //     {
+        //         name : "hitesh",
+        //          age : 20
+        //     },
+        //     {
+        //         name : "parth",
+        //          age : 16
+        //     }]
+            // let ans = a.filter((item) => item.age>=18)
+            // let c = ans.map((item)=> item.name)
+            // console.log(c)
+            // const myObj = {
+            //     name : "John",
+            //     age : 30,
+            //     cars : [
+            //             {name:"Ford" , models : ["Fiesta","Mustang"]},
+            //             {name:"BMW" , models : ["320CC","X3"]},
+            //             {name:"Lambo" , models : ["Urus","Gemera"]}
+                    
+            //     ]
+            // }
+            // console.log(myObj.cars[0].name,myObj.cars[0].models[1])
+            
+            // const person = 
+            // {
+            //   fname : "John",
+            //   lname : "Doe",
+            //   age : 24,
+            //   sal : function()
+            //   {
+            //     return 50000
+            //   },
+            //   fullname : function()
+            //   {
+            //     return this.fname + " " + this.lname
+            //   }
+            // }
+            // console.log(person.sal())
+            // console.log(person.fullname())
+
+          ////////   De-Structuring Of Array
+            
+            // let [a,b,c,d] = [10,20,30,40]
+            // console.log(a)
+            // console.log(b)
+            // console.log(c)
+            // console.log(d)
+            //  var [first="john",second = first]  = ["Harry","Sam"]
+            //  console.log(first)
+            //  console.log(second)
+
+            // var [first, ...second] = [10,20,30,40,50,60]
+            // console.log(first)
+            // console.log(second)
+            var numbers = [5,[2,3,4],12,14]
+            var [a,[x,y,z]] = numbers
+            console.log(a)
+            console.log(x)
+            console.log(y)
+            console.log(z)             
+
+     
+</script>
+</body>
+</html>
