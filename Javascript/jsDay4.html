@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+       <!-- <input id="i1" type="number">
+       <input id="i2" type="number">
+    <select name="" id="sel">
+             <option value="None">None</option>
+             <option value="add">add</option>
+             <option value="minus">minus</option>
+             <option value="mul" >mul</option>
+             <option value="div" >div</option>
+    </select>   -->
+
+       <!-- <select name="col" id="col">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="black">Black</option>
+    </select>  -->
+     
+    <input type="text" class="inp"> <br>
+    <input type="text" class="inp"> <br>
+    <input type="text" class="inp"> <br>
+    <input type="text" class="inp"> <br>
+    <input type="text" class="inp"> <br>
+    <input type="text" class="inp"> <br>
+    <!-- <button class="btn">Submit</button> -->
+
+     <button id="butn">print</button>
+
+    <script>
+            //    document.getElementById("sel").onchange = function()
+            //    {
+            //     let a = document.getElementById("sel").value
+            //     let b = parseInt(document.getElementById("i1").value)
+            //     let c = parseInt(document.getElementById("i2").value)
+                
+            //     if(a=="add")
+            //     {
+            //         console.log(b+c)
+            //     }
+            //     else if (a=="minus")
+            //     {
+            //         console.log(b-c)
+            //     }
+            //     else if(a=="mul")
+            //     {
+            //         console.log(b*c)
+            //     } 
+            //     else 
+            //     {
+            //         console.log(b/c)
+            //     }
+            //    }
+            //    document.getElementById("col").onchange = function()
+            //    {
+            //     let w = document.getElementById("col").value;
+
+            //     if(w== "red")
+            //     {
+            //         document.body.style.backgroundColor = "red"
+            //     }
+            //     else if (w== "blue")
+            //     {
+            //         document.body.style.backgroundColor = "blue"
+            //     }
+            //     else if (w== "green")
+            //     {
+            //         document.body.style.backgroundColor = "green"
+            //     }
+            //     else if (w== "yellow")
+            //     {
+            //         document.body.style.backgroundColor = "yellow"
+            //     }
+            //     else if (w== "black")
+            //     {
+            //         document.body.style.backgroundColor = "black"
+            //     }
+
+            //    }
+
+
+             /// By Class Name
+
+            //    document.getElementsByClassName("btn")[0].onclick = function()
+            //    {
+            //     let r = document.getElementsByClassName("inp")
+            //     for(i=0; i<r.length ; i++)
+            //     {
+            //     // console.log(r[i])
+            //     //console.log(r)
+            //     console.log(r[i].value)  // For Array
+            //    }
+            // for(let i of r)
+            // {
+            //     console.log(i.value)
+            //     console.log(i)
+            // }
+            { 
+                // document.querySelector("#butn").onclick = function()
+                // {
+                //     console.log("Hello")
+                // }
+                document.querySelector("button").onclick = function()
+                {
+                    let a = document.querySelectorAll("input")
+                    console.log(a)
+                }
+
+            }
+            
+    </script>
+</body>
+</html>
